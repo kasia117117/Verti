@@ -1,0 +1,53 @@
+//mobile first
+
+.welcome {
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0 3px 0 0 rgb(0, 0, 0 ,0.05);
+  padding: 3em;
+  @include tablet {
+    display: flex;
+    text-align: left;
+  }
+  @include desktop;
+
+    .welcome__content {
+      @include tablet {
+      width:188%
+      }
+      .welcome__title {
+        padding-top: 1em;
+        font-size: 3.5em;
+        text-align: center;
+        @include tablet {
+          text-align: left;
+          padding: 0.25em;
+        }
+      }
+      .welcome__description {
+        padding:0.75em 0;
+        font-size: 2.5em;
+        text-align: center;
+        line-height: 1.25em;
+        @include tablet {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+
+  .welcome__actions {
+    @include tablet {
+      width:100%;
+    }
+    .welcome__cta {
+      background-color:$button-featured-color;
+      color:white;
+
+    }
+    .welcome__more {
+      background-color: $main-background-color;
+      color:$main-font-color;
+    }
+  }
