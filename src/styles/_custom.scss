@@ -1,4 +1,15 @@
+body {
+  background-color: $main-background-color;
+}
 
 h1 {
-  color: red;
+  background-color:$logo-background-color;
+  padding:0.2em;
+  color:white;
+  display:inline-block;
+  border-radius: 5px;
+  font-size: 2em;
+  font-family: "Oleo Script" , cursive;
+  letter-spacing: 0.05em;
+  font-weight: 300;
 }
