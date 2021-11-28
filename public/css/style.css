@@ -176,17 +176,69 @@ body {
 
 body {
   background-color: #E4E4E4;
+  color: #444444;
+}
+@media screen and (min-width: 1000px) {
+  body {
+    padding: 1em;
+  }
+}
+body a {
+  color: #444444;
 }
 
-h1 {
+header {
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1000px) {
+  header {
+    justify-content: space-between;
+    height: 20vh;
+  }
+}
+@media screen and (min-width: 1250px) {
+  header {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+header .logo {
   background-color: #fc4887;
   padding: 0.2em;
   color: white;
   display: inline-block;
   border-radius: 5px;
-  font-size: 2em;
+  font-size: 2.25em;
   font-family: "Oleo Script", cursive;
   letter-spacing: 0.05em;
   font-weight: 300;
+}
+header .menu {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  header .menu {
+    display: flex;
+  }
+}
+header .menu .menu_item {
+  padding: 0.5em 1em;
+  margin: 0.5em 1em;
+  background-color: #E4E4E4;
+  border-radius: 0.5em;
+}
+header .menu .menu_item--featured {
+  background-color: #444444;
+  color: white;
+}
+header .menu .menu_item--featured a {
+  color: white;
+}
+header .menu .menu_link {
+  text-decoration: none;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
