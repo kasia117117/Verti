@@ -307,4 +307,49 @@ header .menu .menu_link {
   background-color: #E4E4E4;
   color: #444444;
 }
+
+.portfolio {
+  margin-top: 2em;
+}
+@media screen and (min-width: 1000px) {
+  .portfolio {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .portfolio {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+.portfolio .project {
+  border-radius: 6px;
+  margin-top: 2em;
+  background-color: white;
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.05);
+}
+@media screen and (min-width: 1000px) {
+  .portfolio .project {
+    width: 31.5%;
+  }
+}
+.portfolio .project .project__thumbnail {
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+}
+.portfolio .project .project__content {
+  padding: 2em;
+}
+.portfolio .project .project__content .project__title {
+  font-size: 1.25em;
+  font-weight: 900;
+}
+.portfolio .project .project__content .project__description {
+  margin-top: 2em;
+  line-height: 2em;
+}
+.portfolio .project .project__content .project__tags {
+  margin: 1em 0;
+}
 /*# sourceMappingURL=style.css.map */

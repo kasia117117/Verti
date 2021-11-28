@@ -1,0 +1,39 @@
+//mobile first
+
+.portfolio {
+  margin-top: 2em;
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+  @include desktop;
+
+  .project {
+    border-radius: 6px;
+    margin-top: 2em;
+    background-color:white;
+    box-shadow: 0 3px 0 0 rgb(0, 0, 0 ,0.05);
+    @include tablet {
+      width: 31.5%;
+    }
+    .project__thumbnail {
+      width: 100%;
+      //border-radius tylko z góry
+      border-radius: 6px 6px 0 0 ;
+    }
+    .project__content {
+      padding: 2em;
+      .project__title {
+        font-size:1.25em;
+        font-weight:900;
+      }
+      .project__description{
+        margin-top: 2em;
+        line-height: 2em;
+      }
+      .project__tags {
+        margin:1em 0 ;
+      }
+    }
+  }
+}
