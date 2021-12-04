@@ -30,9 +30,13 @@
       .project__description{
         margin-top: 2em;
         line-height: 2em;
+        color:$subtext-color;
+        font-weight:300;
       }
       .project__tags {
         margin:1em 0 ;
+        color:$subtext-color;
+        font-weight:300;
       }
     }
   }

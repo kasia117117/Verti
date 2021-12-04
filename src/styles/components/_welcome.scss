@@ -4,10 +4,11 @@
   background-color: white;
   border-radius: 7px;
   box-shadow: 0 3px 0 0 rgb(0, 0, 0 ,0.05);
-  padding: 3em;
+  padding: 1em;
   @include tablet {
     display: flex;
     text-align: left;
+    padding:3em;
 
   }
   @include desktop;
@@ -18,22 +19,25 @@
       }
       .welcome__title {
         padding-top: 1em;
-        font-size: 3.5em;
+        font-size: 2em;
         text-align: center;
         font-weight: 900;
         @include tablet {
           text-align: left;
-          padding: 0.25em;
+          padding: 0.25em 0;
+          font-size:3.5em;
         }
       }
       .welcome__description {
         padding:0.75em 0;
-        font-size: 2.5em;
+        font-size: 1.5em;
         font-weight: 300;
         text-align: center;
         line-height: 1.25em;
+        color:$subtext-color;
         @include tablet {
           text-align: left;
+          font-size:2.5em;
         }
       }
     }
@@ -48,12 +52,24 @@
       background-color:$button-featured-color;
       color:white;
       font-weight:900;
-      font-size: 2em;
+      font-size: 1em;
+      @include tablet {
+       font-size:2em;
+        display:flex;
+        justify-content:space-evenly;
+        flex-direction: row-reverse;
+      }
     }
     .welcome__more {
       background-color: $main-background-color;
       font-weight:900;
-      font-size: 2em;
+      font-size: 1em;
       color:$main-font-color;
+      @include tablet {
+        font-size:2em;
+        display:flex;
+        justify-content:space-evenly;
+        flex-direction: row-reverse;
+      }
     }
   }
