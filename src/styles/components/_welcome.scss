@@ -8,6 +8,7 @@
   @include tablet {
     display: flex;
     text-align: left;
+
   }
   @include desktop;
 
@@ -27,6 +28,7 @@
       .welcome__description {
         padding:0.75em 0;
         font-size: 2.5em;
+        font-weight: 300;
         text-align: center;
         line-height: 1.25em;
         @include tablet {
@@ -44,10 +46,13 @@
     .welcome__cta {
       background-color:$button-featured-color;
       color:white;
-
+      font-weight:700;
+      font-size: 2em;
     }
     .welcome__more {
       background-color: $main-background-color;
+      font-weight:bold;
+      font-size: 2em;
       color:$main-font-color;
     }
   }
