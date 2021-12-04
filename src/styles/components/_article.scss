@@ -32,9 +32,9 @@
 
     .article__button {
       background-color:$button-featured-color;
-      //padding:0.75em 2em;
+      padding:0.75em 2em;
       color:white;
-      //font-size:1.25em;
+      font-size:1.25em;
       font-family: "Open Sans",sans-serif;
       @include tablet {
         font-size:1.25em;

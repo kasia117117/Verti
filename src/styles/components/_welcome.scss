@@ -20,6 +20,7 @@
         padding-top: 1em;
         font-size: 3.5em;
         text-align: center;
+        font-weight: 900;
         @include tablet {
           text-align: left;
           padding: 0.25em;
@@ -46,12 +47,12 @@
     .welcome__cta {
       background-color:$button-featured-color;
       color:white;
-      font-weight:700;
+      font-weight:900;
       font-size: 2em;
     }
     .welcome__more {
       background-color: $main-background-color;
-      font-weight:bold;
+      font-weight:900;
       font-size: 2em;
       color:$main-font-color;
     }

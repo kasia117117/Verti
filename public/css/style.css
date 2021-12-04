@@ -188,7 +188,7 @@ body {
 body {
   background-color: #E4E4E4;
   color: #444444;
-  padding: 2.5em;
+  padding: 2em;
 }
 body a {
   color: #444444;
@@ -275,6 +275,7 @@ header .menu .menu_link {
   padding-top: 1em;
   font-size: 3.5em;
   text-align: center;
+  font-weight: 900;
 }
 @media screen and (min-width: 1000px) {
   .welcome .welcome__content .welcome__title {
@@ -303,12 +304,12 @@ header .menu .menu_link {
 .welcome__actions .welcome__cta {
   background-color: #1691c3;
   color: white;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 2em;
 }
 .welcome__actions .welcome__more {
   background-color: #E4E4E4;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 2em;
   color: #444444;
 }
@@ -398,7 +399,9 @@ header .menu .menu_link {
 }
 .article .article__content .article__button {
   background-color: #1691c3;
+  padding: 0.75em 2em;
   color: white;
+  font-size: 1.25em;
   font-family: "Open Sans", sans-serif;
 }
 @media screen and (min-width: 1000px) {
@@ -455,100 +458,73 @@ header .menu .menu_link {
   }
 }
 
-.article {
+.footer {
   margin-top: 5em;
-}
-@media screen and (min-width: 1000px) {
-  .article {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-  }
 }
 @media screen and (min-width: 1250px) {
-  .article {
+  .footer {
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 5em;
   }
 }
 @media screen and (min-width: 1000px) {
-  .article .article__content {
-    padding-left: 3.5em;
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
   }
 }
-.article .article__content .article__title {
-  font-size: 1.1em;
-  margin-bottom: 1.25em;
-}
-@media screen and (min-width: 1000px) {
-  .article .article__content .article__title {
-    font-size: 2.25em;
-  }
-}
-.article .article__content .article__text {
-  color: #696969;
-  font-size: 0.9em;
-  line-height: 2em;
-  margin-bottom: 1.25em;
-  font-weight: 300;
-}
-.article .article__content .article__button {
-  background-color: #1691c3;
-  color: white;
-  font-family: "Open Sans", sans-serif;
-}
-@media screen and (min-width: 1000px) {
-  .article .article__content .article__button {
-    font-size: 1.25em;
-    padding: 0.75em 0.5em;
-    width: 300px;
-  }
-}
-.article .article__thumbnail {
-  margin-top: 5em;
-}
-@media screen and (min-width: 1000px) {
-  .article .article__thumbnail {
-    margin: 0 auto;
-  }
-}
-.article .article__thumbnail .thumbnail__title {
-  font-size: 1.1em;
-  margin-bottom: 1.25em;
-}
-.article .article__thumbnail .thumbnail__pictures {
+.footer .footer__column {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+.footer .footer__column .footer__title {
+  margin: 2em 0;
 }
 @media screen and (min-width: 1000px) {
-  .article .article__thumbnail .thumbnail__pictures {
-    gap: 0.3em;
+  .footer .footer__column .footer__title {
+    font-size: 1.25em;
+    font-weight: 900;
   }
 }
-.article .article__thumbnail .thumbnail__pictures .thumbnail__photo {
-  width: 49%;
-  border-radius: 6px;
-  margin-bottom: 0.7em;
+.footer .footer__column .footer__link {
+  font-weight: 300;
+  color: #696969;
+  margin-bottom: 1em;
+}
+.footer .footer__column .footer__widget {
+  border-bottom: 0.01em solid rgba(159, 159, 159, 0.5);
+  margin-top: 2em;
 }
 @media screen and (min-width: 1000px) {
-  .article .article__thumbnail .thumbnail__pictures .thumbnail__photo {
-    margin: 0 auto;
+  .footer .footer__column .footer__widget {
+    display: none;
   }
 }
-.article .article__thumbnail .thumbnail__button {
-  margin-top: 1.25em;
-  background-color: #1691c3;
-  padding: 0.75em 2em;
+.footer .footer__contact .footer__title {
+  margin: 2em 0;
+}
+@media screen and (min-width: 1000px) {
+  .footer .footer__contact .footer__title {
+    font-size: 1.25em;
+    font-weight: 900;
+  }
+}
+.footer .footer__contact .fab__background {
   color: white;
+  background-color: #444444;
+  padding: 0.4em;
   font-size: 1.25em;
-  font-family: "Open Sans", sans-serif;
+  border-radius: 6px;
+  margin-bottom: 1em;
 }
-@media screen and (min-width: 1000px) {
-  .article .article__thumbnail .thumbnail__button {
-    width: 140px;
-    padding: 0.75em 1em;
-  }
+.footer .footer__contact .contact__info {
+  font-weight: 300;
+  color: #696969;
+  margin-bottom: 1em;
+}
+.footer .footer__contact .footer__widget {
+  border-bottom: 0.01em solid rgba(159, 159, 159, 0.5);
+  margin-top: 2em;
 }
 /*# sourceMappingURL=style.css.map */
